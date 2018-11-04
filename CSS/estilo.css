@@ -1,0 +1,173 @@
+/*
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by jriospen7152 (http://jsbin.com/xevofac/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+*/
+@font-face {
+    font-family: roboto;
+    src: url('../FONTS/robotolight.ttf');
+}
+
+/* INICIO ESTILO DEFECTO PÁGINA PRINCIPAL*/
+	*{
+		font-family: roboto;
+	}
+
+	body{
+		background-color: #fefefe;
+		text-align: center;
+	}
+
+	a{
+		text-decoration: none;
+		color: blue;
+	}
+
+	nav{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	nav a{
+		display: inline-block;
+		padding: 10px;
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 1.5em;
+	}
+
+	#contenedor{
+		width:1200px;
+		margin:auto; 
+		display: block;
+	}
+	#cuerpo{
+		width: 100%;
+		height: auto;
+		display: inline-block;
+	}
+	#slider{
+		width: 70%;
+		height: auto;
+		display: inline-block;
+	}
+	#slider img{
+		width: 100%;
+	}
+
+	footer{
+		text-align: left;
+		border-top: 1px dashed gray;
+		margin-top: 10px;
+	}
+	footer p{
+		line-height: 5px;
+	}
+
+	footer #copyright{
+		text-align: center;
+	}
+/* FINAL ESTILO DEFECTO PÁGINA PRINCIPAL*/
+
+
+
+
+/* INICIO ESTILO DEFECTO PÁGINA INICIO*/
+	#botones a{
+		display: inline-block;
+		padding: 20px;
+		font-size: 2em;
+		background-color: #168497;
+		margin-right: 40px;
+		margin-left: 40px;
+		color: white;
+		border-radius: 5px;
+		margin-top: 10px;
+	}
+	#cuadrilla{
+		margin-top: 20px;
+		width: 100%
+	}
+	.parte_cuadrilla{
+		margin-top: 5px;
+		display: inline-block;
+		width: 45%;
+		height: auto;
+		border: 1px solid gray; 
+		padding: 5px;
+	}
+	.cuerpo_cuadrilla{
+		text-align:justify;
+	}
+	.parte_cuadrilla ul{
+		text-align: left;
+	}
+	.redes_sociales_imagen{
+		width: 30px;
+		height: 30px;
+		margin-top: 5px;
+	}
+	.cuerpo_cuadrilla_redes_sociales{
+		text-align: center;
+	}
+	#video_inicio{
+		margin-top: 10px;
+		width: 50%;
+	}
+/* FINAL ESTILO DEFECTO PÁGINA INICIO*/
+
+
+
+
+/* INICIO ESTILO DEFECTO PÁGINA PROYECTOS*/
+	#individual{
+		width: 100%;
+	}
+	.parte_cuadrilla ul{
+		list-style-type:none; 
+	}
+	.parte_cuadrilla ul li{
+		margin: 30px; 
+	}
+	.lista_cursos_pregrado{
+		padding: 10px;
+		line-height: 10px;
+		background-color: #afc8b3;
+		border-radius: 6px;
+	}
+	.lista_cursos_posgrado{
+		padding: 10px;
+		line-height: 10px;
+		background-color: #b0b5c9;
+		border-radius: 6px;
+	}
+	.texto_proyectos{
+		text-align: justify;
+		font-size: 1.3em;
+	}
+	.titulo_proyecto{
+		text-align: justify;
+		font-size: 1.1em;
+	}
+	.cuerpo_proyecto{
+		text-align: justify;
+		font-size: 0.8em;
+	}
+	.cuadrilla_proyectos{
+		width: 26%;
+		border:1px dashed gray;
+		padding: 10px; 
+		display: inline-block;
+	}
+	.figura_proyecto{
+		width: 100%;
+		margin:auto;  
+	}
+	.imagen_proyecto{
+		width: 100%;
+		margin:auto;  
+	}
+/* FINAL ESTILO DEFECTO PÁGINA PROYECTOS*/
