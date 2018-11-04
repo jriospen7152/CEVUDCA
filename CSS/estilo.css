@@ -110,6 +110,7 @@ Released under the MIT license: http://jsbin.mit-license.org
 		width: 45%;
 		height: auto;
 		padding: 5px;
+		vertical-align: top;
 	}
 	.cuerpo_cuadrilla{
 		text-align:justify;
@@ -176,6 +177,8 @@ Released under the MIT license: http://jsbin.mit-license.org
 		border:1px dashed gray;
 		padding: 10px; 
 		display: inline-block;
+		min-height: 400px;
+		vertical-align: top;
 	}
 	.figura_proyecto{
 		width: 100%;
