@@ -70,6 +70,19 @@ Released under the MIT license: http://jsbin.mit-license.org
 	footer #copyright{
 		text-align: center;
 	}
+
+	.lista_no_decorada{
+		list-style-type: none; 
+	}
+
+	.letra_2em{font-size: 2em;}
+	.letra_15em{font-size: 1.5em;}
+	.letra_13em{font-size: 1.3em;}
+	.letra_11em{font-size: 1.1em;}
+	.letra_08em{font-size: 0.8em;}
+	.alinear_izquierda{text-align: left;}
+	.alinear_centro{text-align: center;}
+	.alinear_justificar{text-align: justify;}
 /* FINAL ESTILO DEFECTO PÁGINA PRINCIPAL*/
 
 
@@ -96,7 +109,6 @@ Released under the MIT license: http://jsbin.mit-license.org
 		display: inline-block;
 		width: 45%;
 		height: auto;
-		border: 1px solid gray; 
 		padding: 5px;
 	}
 	.cuerpo_cuadrilla{
@@ -106,9 +118,9 @@ Released under the MIT license: http://jsbin.mit-license.org
 		text-align: left;
 	}
 	.redes_sociales_imagen{
-		width: 30px;
-		height: 30px;
-		margin-top: 5px;
+		width: 35px;
+		height: 35px;
+		margin-top: 35px;
 	}
 	.cuerpo_cuadrilla_redes_sociales{
 		text-align: center;
@@ -130,15 +142,18 @@ Released under the MIT license: http://jsbin.mit-license.org
 		list-style-type:none; 
 	}
 	.parte_cuadrilla ul li{
+		margin: 20px; 
+	}
+	#lista_cursos_pregrado li, #lista_cursos_posgrado li{
 		margin: 30px; 
 	}
-	.lista_cursos_pregrado{
+	#lista_cursos_pregrado li a{
 		padding: 10px;
 		line-height: 10px;
 		background-color: #afc8b3;
 		border-radius: 6px;
 	}
-	.lista_cursos_posgrado{
+	#lista_cursos_posgrado li a{
 		padding: 10px;
 		line-height: 10px;
 		background-color: #b0b5c9;
@@ -171,3 +186,69 @@ Released under the MIT license: http://jsbin.mit-license.org
 		margin:auto;  
 	}
 /* FINAL ESTILO DEFECTO PÁGINA PROYECTOS*/
+
+/* INICIO ESTILO DEFECTO PÁGINA SOBRECEV*/
+	.seccion_sobrecev{
+		width: 100%;
+		height: auto;
+		min-height: 200px;
+		margin-top: 15px;
+	}
+	.seccion_sobrecev div{
+		width: 65%;
+		display: inline-block;
+		margin:0px; 
+		padding:5px; 
+		min-height: 200px;
+		vertical-align: top;
+	}
+	.seccion_sobrecev figure{
+		padding:15px; 
+		margin:0px; 
+		width: 30%;
+		display: inline-block;
+		min-height: 200px;
+		vertical-align: top;
+	}
+	.seccion_sobrecev figure img{
+		width: 100%;
+	}
+/* FINAL ESTILO DEFECTO PÁGINA SOBRECEV*/
+
+/* INICIO ESTILO DEFECTO PÁGINA CONTACTANOS*/
+	.seccion_contactanos{
+		width: 100%;
+		height: auto;
+		min-height: 200px;
+		margin-top: 15px;
+	}
+	.seccion_contactanos div{
+		width: 65%;
+		display: inline-block;
+		margin:0px; 
+		padding:5px; 
+		min-height: 200px;
+		vertical-align: top;
+		text-align: left;
+	}
+	.seccion_contactanos div input{
+		padding: 6px;
+	}
+	.seccion_contactanos div input[type=submit]{
+		padding: 16px;
+		background-color: #024288;
+		border-radius: 5px;
+		color: white;
+	}
+	.seccion_contactanos figure{
+		padding:15px; 
+		margin:0px; 
+		width: 30%;
+		display: inline-block;
+		min-height: 200px;
+		vertical-align: top;
+	}
+	.seccion_contactanos figure img{
+		width: 100%;
+	}
+/* FINAL ESTILO DEFECTO PÁGINA CONTACTANOS*/
