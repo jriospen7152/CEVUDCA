@@ -25,7 +25,9 @@ Released under the MIT license: http://jsbin.mit-license.org
 		text-decoration: none;
 		color: blue;
 	}
-
+	header{
+		text-align: left;
+	}
 	nav{
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -50,12 +52,13 @@ Released under the MIT license: http://jsbin.mit-license.org
 		display: inline-block;
 	}
 	#slider{
-		width: 70%;
+		width: 100%;
 		height: auto;
 		display: inline-block;
+		text-align: center;
 	}
 	#slider img{
-		width: 100%;
+		width: 70%;
 	}
 
 	footer{
@@ -83,26 +86,66 @@ Released under the MIT license: http://jsbin.mit-license.org
 	.alinear_izquierda{text-align: left;}
 	.alinear_centro{text-align: center;}
 	.alinear_justificar{text-align: justify;}
-/* FINAL ESTILO DEFECTO PÁGINA PRINCIPAL*/
+
+	.logo{ margin-left: 12em;}
+
+	.menu_navegacion {
+		margin: 0px 0px 0px 0px;
+    	padding: 0px 0px 0px 0px;
+	}
+
+	.menu_navegacion li {
+		list-style: none;
+		display: inline-block;
+		background: #118794;
+		height: 40px !important;
+		line-height: 20px !important;
+		margin: 0 auto;
+	}
+	.menu_navegacion li a {
+		color: #ffffff;
+		font-weight: 100;
+		font-size: 1.1em;
+	}
+	
+	.tabla_botones{
+		width: 60%;
+		margin: 2em auto;
+		border-spacing: 1.2em 1.2em;
+	}
+
+	.tabla_botones tr td{
+		width: 20% !important;
+		margin: 0 auto;
+		background: #168497;
+		padding: 1em 1em 1em 1em;
+		color: #ffffff;
+		font-weight: 400;
+		font-size: 1.5em;
+		margin-right: 1.5em;
+	}
+	
+	.tabla_botones tr td a{
+		font-size: 1em;
+	}
+
+	/* FINAL ESTILO DEFECTO PÁGINA PRINCIPAL*/
 
 
 
 
 /* INICIO ESTILO DEFECTO PÁGINA INICIO*/
 	#botones a{
-		display: inline-block;
-		padding: 20px;
-		font-size: 2em;
-		background-color: #168497;
-		margin-right: 40px;
-		margin-left: 40px;
 		color: white;
-		border-radius: 5px;
-		margin-top: 10px;
 	}
 	#cuadrilla{
-		margin-top: 20px;
+		margin-top: 35px;
 		width: 100%
+	}
+	.titulo_cuadrilla {
+		padding: 0.5em 0.5em 0.5em 0.5em;
+		border-bottom: 1.5px dashed #db7313;
+		color: #078766;
 	}
 	.parte_cuadrilla{
 		margin-top: 5px;
