@@ -89,7 +89,7 @@ Released under the MIT license: http://jsbin.mit-license.org
 
 
 /* INICIO ESTILO DEFECTO PÁGINA INICIO*/
-	#botones a{
+	#botones button{
 		display: inline-block;
 		padding: 20px;
 		font-size: 2em;
@@ -172,6 +172,12 @@ Released under the MIT license: http://jsbin.mit-license.org
 		text-align: justify;
 		font-size: 0.8em;
 	}
+	.botones_voto{
+		padding: 10px;
+		background-color: #0c6517;
+		border-radius: 5px;
+		color:white;
+	}
 	.cuadrilla_proyectos{
 		width: 26%;
 		border:1px dashed gray;
@@ -215,6 +221,16 @@ Released under the MIT license: http://jsbin.mit-license.org
 	}
 	.seccion_sobrecev figure img{
 		width: 100%;
+	}
+	#pregunta_sobrecev{
+		padding: 15px;
+		background-color: #283855;
+		border-radius: 5px;
+		color:white;
+	}
+	#texto_pregunta_sobrecsv{
+		display: none;
+		color: #4caf50;
 	}
 /* FINAL ESTILO DEFECTO PÁGINA SOBRECEV*/
 

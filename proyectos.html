@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PROYECTOS | Centro de educación virtual de la UDCA</title>
     <link rel="stylesheet" href="CSS/estilo.css">
+    <script src="JS/script.js"></script>
 </head>
-<body>
+<body >
     <header>
         <h1 id="titulo">Bienvenido al centro de educación virtual de la UDCA</h1>
     </header>
@@ -39,6 +40,7 @@
                         <figcaption>Imagen de consumo de carne de conejo</figcaption>
                     </figure>
                     <p class="cuerpo_proyecto">Se pudo concluir que la transformación de la carne de conejo en jamón puede ser una estrategia viable para masificar el consumo de este tipo de proteína animal</p>
+                    <button onclick="votar('carne_conejo')" class="botones_voto letra_13em">Apoya este proyecto 0 votos</button>
                 </article>
                 <article class="cuadrilla_proyectos">
                     <h3 class="titulo_proyecto">Gestión del Agua Euroclima+</h3>
@@ -47,6 +49,7 @@
                         <figcaption>Imagen de gestión del agua</figcaption>
                     </figure>
                     <p class="cuerpo_proyecto">La Unión Europea, dentro de su programa de cooperación regional EUROCLIMA+, convoca a autoridades nacionales y locales responsables de la política y regulación del sector del agua y de los servicios de agua potable y saneamiento a presentar propuestas</p>
+                    <button onclick="votar('cuidado_agua')" class="botones_voto letra_13em">Apoya este proyecto 0 votos</button>
                 </article>
                 <article class="cuadrilla_proyectos">
                     <h3 class="titulo_proyecto">Lucha Contra la Resistencia Antimicrobiana</h3>
@@ -55,6 +58,7 @@
                         <figcaption>Imagen de lucha Contra la Resistencia Antimicrobiana</figcaption>
                     </figure>
                     <p class="cuerpo_proyecto">Soluciones veterinarias para reducir la resistencia a los antimicrobianos (AMR) con un enfoque en animales de aves de corral, cerdos o acuicultura. Al menos una de las instituciones administradoras debe estar basada en un país de ingresos bajos o medios</p>
+                    <button onclick="votar('lucha_bacteriana')" class="botones_voto letra_13em">Apoya este proyecto 0 votos</button>
                 </article>
             </section>
             <section id="cuadrilla">
@@ -62,32 +66,32 @@
                     <h3 class="titulo_cuadrilla">Programas de pregrado</h3>  
                     <p class="cuerpo_cuadrilla">A continuación podras ver la lista de enlaces de pregrados disponibles en modalidad virtual en la UDCA, da click sobre el que más te interese para obtener más información  
                     <ul id="lista_cursos_pregrado">
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Informática Virtual</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Inglés Virtual</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Catedra Institucional</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">PlanesTIC</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Summary</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Medicina</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Enfermeria</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Ciencias del Deporte</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Premedico</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Tec. en Entrenamiento Deportivo</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Economia</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Negocios Internacionales</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Administracion de Empresas</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Medicina Veterinaria</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Zootecnia</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Medicina Veterinaria y Zootecnia</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Medicina Veterinaria y Zootecnia Cartagena</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Quimica</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Quimica Farmaceutica</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Departamento de Ciencias Exactas y Naturales</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Ciencias Ambientales</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Ingenieria Agronomica</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Ingeniería Comercial</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Ingeniería Geográfica y Ambiental</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Derecho</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Licenciatura en Ciencias Naturales y Educación Ambiental</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Informática Virtual</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Inglés Virtual</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Catedra Institucional</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">PlanesTIC</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Summary</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Medicina</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Enfermeria</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Ciencias del Deporte</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Premedico</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Tec. en Entrenamiento Deportivo</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Economia</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Negocios Internacionales</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Administracion de Empresas</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Medicina Veterinaria</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Zootecnia</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Medicina Veterinaria y Zootecnia</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Medicina Veterinaria y Zootecnia Cartagena</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Quimica</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Quimica Farmaceutica</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Departamento de Ciencias Exactas y Naturales</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Ciencias Ambientales</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Ingenieria Agronomica</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Ingeniería Comercial</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Ingeniería Geográfica y Ambiental</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Derecho</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Licenciatura en Ciencias Naturales y Educación Ambiental</a></li>
                     </ul>  
                     </p>
                 </article>
@@ -95,10 +99,10 @@
                     <h3 class="titulo_cuadrilla">Programas de posgrado</h3>  
                     <p class="cuerpo_cuadrilla">A continuación podras ver la lista de enlaces de posgrados disponibles en modalidad virtual en la UDCA, da click sobre el que más te interese para obtener más información  
                     <ul id="lista_cursos_posgrado">
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Esp. en Lab. Clínico Veterinario</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Esp. en Sanidad Animal</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Esp. en Producción Animal</a></li>
-                        <li><a href="https://virtual.udca.edu.co/course/index.php">Esp. en Nutrición Animal Aplicada </a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Esp. en Lab. Clínico Veterinario</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Esp. en Sanidad Animal</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Esp. en Producción Animal</a></li>
+                        <li><a href="https://virtual.udca.edu.co/course/index.php" target="_BLANK">Esp. en Nutrición Animal Aplicada </a></li>
                     </ul>  
                     </p>
                 </article>
