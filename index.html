@@ -6,10 +6,12 @@
     <title>INICIO | Centro de educación virtual de la UDCA</title>
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="JS/script.js"></script>
 </head>
-<body>
+<body onload="bienvenida()">
     <header>
         <img class="logo" src="IMAGES/CEV.png" />
+        <h1 id="titulo">Bienvenido al centro de educación virtual de la UDCA</h1>
     </header>
     <section id="navegacion">
         <nav>
@@ -44,24 +46,21 @@
                 <table class="tabla_botones">
                     <tbody>
                         <tr>
-                            <td> 
+                            <td class='botones_inicio'> 
                                 <i class="fas fa-graduation-cap"></i>
-                                <a href="proyectos.html">PREGRADO</a>
+                                <a onclick="redireccion('pregrado')" href="#">PREGRADO</a>
                             </td>
-                            <td>
+                            <td class='botones_inicio'>
                                 <i class="fas fa-user-tie"></i>
-                                <a href="proyectos.html">POSGRADO</a>
+                                <a onclick="redireccion('posgrado')" href="#">POSGRADO</a>
                             </td>
-                            <td>
+                            <td class='botones_inicio'>
                                 <i class="fas fa-globe-americas"></i>
-                                <a href="proyectos.html">INGLÉS</a>
+                                <a onclick="redireccion('ingles')" href="#">INGLÉS</a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                <!-- <a class="botones_inicio" href="proyectos.html">PREGRADO</a>
-                <a class="botones_inicio" href="proyectos.html">POSGRADO</a>
-                <a class="botones_inicio" href="proyectos.html">INGLÉS</a> -->
             </article>
             <section id="cuadrilla">
                 <article class="parte_cuadrilla" id="noticias">
