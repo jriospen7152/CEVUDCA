@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<label>Contraseña</label>
 					<input type="password" id="contrasena" class="form-control" placeholder="Contraseña">
 				</div>
-				<button class="btn btn-success">Iniciar Sesión</button>
+				<button class="btn btn-success">Iniciar Sesión</button> <a href="/programacion_web/index.php/autenticacion/registro" class="btn btn-info">Registrar</a>
 			</div>
 		</div>
 	</body>
