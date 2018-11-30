@@ -13,37 +13,37 @@
             <img class="logo" src="<?php echo base_url(); ?>assets/images/CEV.png" />
     </header>
     <section id="navegacion">
-            <nav>
-                <ul class="menu_navegacion">
-                    <li>
-                        <a class="botones_nav" href="/programacion_web/">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="botones_nav" href="/programacion_web/index.php/cev/proyectos">Proyectos</a>
-                    </li>
-                    <li>
-                        <a class="botones_nav" href="/programacion_web/index.php/cev/recursos">Recursos</a>
-                    </li>
-                    <li>
-                        <a class="botones_nav" href="/programacion_web/index.php/cev/sobrecev">Sobre el CEV</a>
-                    </li>
-                    <li>
-                        <a class="botones_nav" href="/programacion_web/index.php/cev/servicio">Servicio</a>
-                    </li>
-                    <li>
-                        <a class="botones_nav" href="/programacion_web/index.php/cev/contactanos">Contáctanos</a>
-                    </li>
-                    <?php
-                        if($this->session->userdata('usuario') != null){
-                            $usuario = $this->session->userdata('usuario');
-                            echo '<li><a class="botones_nav" href="#" disabled="disabled">Usuario: ' . $usuario["usuario"] . '</a></li>';
-                            echo '<li><a class="botones_nav" href="/programacion_web/index.php/autenticacion/cerrar_sesion/">Cerrar Sesión</a></li>';
-                        }else{
-                            echo '<li><a class="botones_nav" href="/programacion_web/index.php/autenticacion/login/">Iniciar Sesión</a></li>';
-                        }
-                    ?>
-                </ul>
-            </nav>
+        <nav>
+            <ul class="menu_navegacion">
+                <li>
+                    <a class="botones_nav" href="<?php echo site_url('cev/index') ?>">Inicio</a>
+                </li>
+                <li>
+                    <a class="botones_nav" href="<?php echo site_url('cev/proyectos') ?>">Proyectos</a>
+                </li>
+                <li>
+                    <a class="botones_nav" href="<?php echo site_url('cev/recursos') ?>">Recursos</a>
+                </li>
+                <li>
+                    <a class="botones_nav" href="<?php echo site_url('cev/sobrecev') ?>">Sobre el CEV</a>
+                </li>
+                <li>
+                    <a class="botones_nav" href="<?php echo site_url('cev/servicio') ?>">Servicio</a>
+                </li>
+                <li>
+                    <a class="botones_nav" href="<?php echo site_url('cev/contactanos') ?>">Contáctanos</a>
+                </li>
+                <?php
+                    if($this->session->userdata('usuario') != null){
+                        $usuario = $this->session->userdata('usuario');
+                        echo '<li><a class="botones_nav" href="#" disabled="disabled">Usuario: ' . $usuario["usuario"] . '</a></li>';
+                        echo "<li><a class='botones_nav' href='".site_url('autenticacion/cerrar_sesion')."'>Cerrar Sesión</a></li>";
+                    }else{
+                        echo "<li><a class='botones_nav' href='".site_url('autenticacion/login')."'>Iniciar Sesión</a></li>";
+                    }
+                ?>
+            </ul>
+        </nav>
         </section>
     <div id="contenedor">
         <section id="cuerpo">

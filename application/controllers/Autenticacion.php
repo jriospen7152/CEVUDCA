@@ -70,7 +70,7 @@ class Autenticacion extends CI_Controller {
 		}
 		else{
 			$output['error'] = true;
-			$output['mensaje'] = 'Inicio de sesión invalido. Usuarip no encontrado';
+			$output['mensaje'] = 'Inicio de sesión invalido. Usuario no encontrado';
 		}
  
 		echo json_encode($output); 

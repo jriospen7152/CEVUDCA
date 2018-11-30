@@ -5,21 +5,24 @@ $(document).ready(function(){
 });
 
 function iniciar_sesion(){
-
+    ruta = $("#ruta").val();
+    ruta_error = $("#ruta_error").val();
     var data = {
         "usuario": $("#usuario").val(),
         "contrasena": $("#contrasena").val(),
     };
 
     $.ajax({
-        'url': '/programacion_web/index.php/autenticacion/iniciar_sesion',
+        //'url': '/programacion_web/index.php/autenticacion/iniciar_sesion',
+        'url': ruta,
         'method': 'POST',
         'data': data,
         'dataType': 'json',
         success: function(data){
             alert(data.mensaje);
-            if(data.mensaje != 'Inicio de sesión invalido. Usuarip no encontrado'){
-                window.location = '/programacion_web/'
+            if(data.mensaje != 'Inicio de sesión invalido. Usuario no encontrado'){
+                //window.location = '/programacion_web/'
+                window.location = ruta_error
             }
         },
         error: function(err){

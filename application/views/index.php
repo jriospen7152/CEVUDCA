@@ -10,6 +10,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/estilo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="<?php echo base_url(); ?>assets/js/script.js"></script>
+    <script>
+      function initMap() {
+          var ubicacion = {lat: 4.799602, lng: -74.049949};
+          var mapa = new google.maps.Map(
+          document.getElementById('mapa'), {zoom: 12, center: ubicacion});
+          var marcador = new google.maps.Marker({position: ubicacion, map: mapa});
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC73HqpX214aubmUwEv1qf8vaigdio_dao&callback=initMap">
+    </script>
 </head>
 <body onload="bienvenida()">
     <header>
@@ -20,30 +31,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <nav>
             <ul class="menu_navegacion">
                 <li>
-                    <a class="botones_nav" href="/programacion_web/">Inicio</a>
+                    <a class="botones_nav" href="<?php echo site_url('cev/index') ?>">Inicio</a>
                 </li>
                 <li>
-                    <a class="botones_nav" href="/programacion_web/index.php/cev/proyectos">Proyectos</a>
+                    <a class="botones_nav" href="<?php echo site_url('cev/proyectos') ?>">Proyectos</a>
                 </li>
                 <li>
-                    <a class="botones_nav" href="/programacion_web/index.php/cev/recursos">Recursos</a>
+                    <a class="botones_nav" href="<?php echo site_url('cev/recursos') ?>">Recursos</a>
                 </li>
                 <li>
-                    <a class="botones_nav" href="/programacion_web/index.php/cev/sobrecev">Sobre el CEV</a>
+                    <a class="botones_nav" href="<?php echo site_url('cev/sobrecev') ?>">Sobre el CEV</a>
                 </li>
                 <li>
-                    <a class="botones_nav" href="/programacion_web/index.php/cev/servicio">Servicio</a>
+                    <a class="botones_nav" href="<?php echo site_url('cev/servicio') ?>">Servicio</a>
                 </li>
                 <li>
-                    <a class="botones_nav" href="/programacion_web/index.php/cev/contactanos">Contáctanos</a>
+                    <a class="botones_nav" href="<?php echo site_url('cev/contactanos') ?>">Contáctanos</a>
                 </li>
                 <?php
 	    			if($this->session->userdata('usuario') != null){
                         $usuario = $this->session->userdata('usuario');
                         echo '<li><a class="botones_nav" href="#" disabled="disabled">Usuario: ' . $usuario["usuario"] . '</a></li>';
-                        echo '<li><a class="botones_nav" href="/programacion_web/index.php/autenticacion/cerrar_sesion/">Cerrar Sesión</a></li>';
+                        echo "<li><a class='botones_nav' href='".site_url('autenticacion/cerrar_sesion')."'>Cerrar Sesión</a></li>";
                     }else{
-                        echo '<li><a class="botones_nav" href="/programacion_web/index.php/autenticacion/login/">Iniciar Sesión</a></li>';
+                        echo "<li><a class='botones_nav' href='".site_url('autenticacion/login')."'>Iniciar Sesión</a></li>";
                     }
                 ?>
             </ul>
@@ -125,6 +136,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div style="text-align: center; margin: 2em;">
 		<h2>Cantidad de Visitas: <?php echo $cantidad_visitas; ?> </h2>
 	</div>
+    <h4 class="text-center">¿Dónde puedes encontrarnos?</h4>
+    <div style="width:600px;height:450px;margin:auto" id="mapa"></div>
     <footer>
         <p>Contactanos</p>
         <p><small><b>Dirección:</b> Calle 222 No. 55-37, Bogotá</small></p>

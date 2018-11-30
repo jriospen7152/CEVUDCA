@@ -32,8 +32,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="form-group">
 					<label>Contraseña</label>
 					<input type="password" id="contrasena" class="form-control" placeholder="Contraseña">
+					<input type="hidden" id="ruta" value="<?php echo site_url('autenticacion/iniciar_sesion') ?>">
+					<input type="hidden" id="ruta_error" value="<?php echo site_url('cev/index') ?>">
 				</div>
-				<button class="btn btn-success">Iniciar Sesión</button> <a href="/programacion_web/index.php/autenticacion/registro" class="btn btn-info">Registrar</a>
+				<button class="btn btn-success">Iniciar Sesión</button> <a href="<?php echo site_url('autenticacion/registro') ?>" class="btn btn-info">Registrar</a>
 			</div>
 		</div>
 	</body>
