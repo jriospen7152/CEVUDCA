@@ -17,26 +17,6 @@ CREATE DATABASE IF NOT EXISTS `programacion_web` /*!40100 DEFAULT CHARACTER SET 
 USE `programacion_web`;
 
 -- Volcando estructura para tabla programacion_web.empleados
-CREATE TABLE IF NOT EXISTS `empleados` (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador de tabla',
-  `usuario_id` int(11) DEFAULT NULL,
-  `nombre` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `apellido` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `edad` int(11) DEFAULT NULL,
-  `correo_electronico` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  KEY `user_id` (`usuario_id`),
-  CONSTRAINT `empleados_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
-
--- Volcando datos para la tabla programacion_web.empleados: ~0 rows (aproximadamente)
-DELETE FROM `empleados`;
-/*!40000 ALTER TABLE `empleados` DISABLE KEYS */;
-INSERT INTO `empleados` (`id`, `usuario_id`, `nombre`, `apellido`, `edad`, `correo_electronico`, `created_at`, `updated_at`) VALUES
-  (8, 9, 'asdasd', 'asdad', 23, 'asdad@asdasd.com', '2018-11-23 23:35:41', '2018-11-23 23:35:41');
-/*!40000 ALTER TABLE `empleados` ENABLE KEYS */;
 
 -- Volcando estructura para tabla programacion_web.usuarios
 CREATE TABLE IF NOT EXISTS `usuarios` (
@@ -68,6 +48,26 @@ DELETE FROM `visitas`;
 INSERT INTO `visitas` (`id`, `cantidad_visitas`) VALUES
   (1, 34);
 /*!40000 ALTER TABLE `visitas` ENABLE KEYS */;
+CREATE TABLE IF NOT EXISTS `empleados` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador de tabla',
+  `usuario_id` int(11) DEFAULT NULL,
+  `nombre` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `apellido` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `edad` int(11) DEFAULT NULL,
+  `correo_electronico` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`usuario_id`),
+  CONSTRAINT `empleados_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- Volcando datos para la tabla programacion_web.empleados: ~0 rows (aproximadamente)
+DELETE FROM `empleados`;
+/*!40000 ALTER TABLE `empleados` DISABLE KEYS */;
+INSERT INTO `empleados` (`id`, `usuario_id`, `nombre`, `apellido`, `edad`, `correo_electronico`, `created_at`, `updated_at`) VALUES
+  (8, 9, 'asdasd', 'asdad', 23, 'asdad@asdasd.com', '2018-11-23 23:35:41', '2018-11-23 23:35:41');
+/*!40000 ALTER TABLE `empleados` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

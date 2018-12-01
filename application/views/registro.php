@@ -46,6 +46,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="form-group">
 					<label >Correo Electronico</label>
 					<input id="correo_electronico" type="email" class="form-control" placeholder="Correo Electronico">
+					<input id="ruta" type="hidden" value="<?php echo site_url('autenticacion/registrar') ?>">
+					<input id="ruta_login" type="hidden" value="<?php echo site_url('autenticacion/login') ?>">
 				</div>
 				<button class="btn btn-success">Registrar</button>
 			</div>
